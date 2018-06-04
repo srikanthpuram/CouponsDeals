@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.coupons.deals.coupondetails.DealsDetailsActivity">
+
+        <ImageView
+            android:id="@+id/details_store_logo"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:layout_marginStart="@dimen/dimen_24dp"
+            android:layout_marginRight="@dimen/dimen_24dp"
+            />
+
+        <TextView
+            android:id="@+id/details_store_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:switchTextAppearance="?android:textAppearanceLarge"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/details_store_logo"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:layout_marginStart="@dimen/dimen_96dp"/>
+
+        <TextView
+            android:id="@+id/details_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_store_logo"
+            android:layout_marginTop="@dimen/dimen_48dp"
+            android:layout_marginStart="@dimen/dimen_24dp"
+            />
+
+        <TextView
+            android:id="@+id/details_coupon_expiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            app:layout_constraintTop_toBottomOf="@+id/details_coupon"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:layout_marginStart="@dimen/dimen_24dp"
+            android:layout_marginEnd="@dimen/dimen_48dp"
+            />
+
+        <TextView
+            android:id="@+id/details_coupon_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            app:layout_constraintTop_toBottomOf="@+id/details_coupon_expiry"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/details_coupon_expiry"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:layout_marginLeft="@dimen/dimen_24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

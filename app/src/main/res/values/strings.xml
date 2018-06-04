@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CouponsDeals</string>
+    <string name="no_network_access_title">No Internet</string>
+    <string name="no_network_access_message">No internet connection found. Please check your connection and try again.</string>
+    <string name="ok">OK</string>
+    <string name="retrieving_coupons_deals">Retrieving Coupons and Deals</string>
+    <string name="unable_to_process_error">We are unable to process your request at this time.  Please try again later.</string>
+    <string name="coupon">Coupon:</string>
+    <string name="expires">Expires on:</string>
+    <string name="code">CODE:</string>
+</resources>
